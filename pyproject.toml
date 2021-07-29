@@ -7,6 +7,8 @@ authors = ["inahym196 <inahym196@example.com>"]
 [tool.poetry.dependencies]
 python = "^3.6"
 pyudev = "^0.22.0"
+pyserial = "^3.5"
+pyserial-asyncio = "^0.5"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"

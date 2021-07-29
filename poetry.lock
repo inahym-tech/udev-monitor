@@ -95,6 +95,28 @@ optional = false
 python-versions = ">=2.6, !=3.0.*, !=3.1.*, !=3.2.*"
 
 [[package]]
+name = "pyserial"
+version = "3.5"
+description = "Python Serial Port Extension"
+category = "main"
+optional = false
+python-versions = "*"
+
+[package.extras]
+cp2110 = ["hidapi"]
+
+[[package]]
+name = "pyserial-asyncio"
+version = "0.5"
+description = "Python Serial Port Extension - Asynchronous I/O support"
+category = "main"
+optional = false
+python-versions = "*"
+
+[package.dependencies]
+pyserial = "*"
+
+[[package]]
 name = "pytest"
 version = "5.4.3"
 description = "pytest: simple powerful testing with Python"
@@ -167,7 +189,7 @@ testing = ["pytest (>=4.6)", "pytest-checkdocs (>=2.4)", "pytest-flake8", "pytes
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.6"
-content-hash = "2c3009833b2ee47df53cc9063242ef0fd6ab64d3b4e2bcbf244074dc91420e3e"
+content-hash = "2f186f7deeccc3eb0d6cbbe40ebf8542090e1f37c53bb39c4eaf4e4e9d0fe5a2"
 
 [metadata.files]
 atomicwrites = [
@@ -205,6 +227,14 @@ py = [
 pyparsing = [
     {file = "pyparsing-2.4.7-py2.py3-none-any.whl", hash = "sha256:ef9d7589ef3c200abe66653d3f1ab1033c3c419ae9b9bdb1240a85b024efc88b"},
     {file = "pyparsing-2.4.7.tar.gz", hash = "sha256:c203ec8783bf771a155b207279b9bccb8dea02d8f0c9e5f8ead507bc3246ecc1"},
+]
+pyserial = [
+    {file = "pyserial-3.5-py2.py3-none-any.whl", hash = "sha256:c4451db6ba391ca6ca299fb3ec7bae67a5c55dde170964c7a14ceefec02f2cf0"},
+    {file = "pyserial-3.5.tar.gz", hash = "sha256:3c77e014170dfffbd816e6ffc205e9842efb10be9f58ec16d3e8675b4925cddb"},
+]
+pyserial-asyncio = [
+    {file = "pyserial-asyncio-0.5.tar.gz", hash = "sha256:1641e5433a866eeaf6464b3ab88b741e7a89dd8cd0f851b3343b15f425138d33"},
+    {file = "pyserial_asyncio-0.5-py3-none-any.whl", hash = "sha256:4cf1e97d92ae239fe104d76a3a42074c771b7da17ed89aea3c0251c16c950d3e"},
 ]
 pytest = [
     {file = "pytest-5.4.3-py3-none-any.whl", hash = "sha256:5c0db86b698e8f170ba4582a492248919255fcd4c79b1ee64ace34301fb589a1"},
