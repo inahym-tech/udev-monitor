@@ -9,6 +9,7 @@ python = "^3.6"
 pyudev = "^0.22.0"
 pyserial = "^3.5"
 pyserial-asyncio = "^0.5"
+requests = "^2.26.0"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"
